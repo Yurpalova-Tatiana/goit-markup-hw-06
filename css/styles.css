@@ -599,6 +599,59 @@ body{
   color: var(--white-text-color);
   background-color: var(--accent-color);
 }
+/*---------------Подпишитесь на рассылку---------------*/
+.widget-subscribe{
+    margin-left: 93px;
+}
+.form-subscribe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-subscribe-input {
+    width: 358px;
+    padding: 15px 16px;
+    margin-right: 12px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    color: ;
+}
+
+.form-subscribe-input::placeholder {
+    font-size: 16px;
+    line-height: 1.25;   
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+.subscribe-btn{
+    min-width: 200px;
+    min-height: 50px;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    display: inline-block;
+    padding: 10px 32px;
+    
+    font-family: inherit;
+    font-weight: 700;
+    background: var(--accent-color);
+    color: var(--white-text-color);
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+
+    align-self: center;
+}
+
+
 /* --------------------ПОРТФОЛИО----------------- */
 /* ---------------------------------------------- */
 
@@ -887,16 +940,69 @@ padding-bottom: 94px;}
     color: var(--secondary-text-color);
   }
 
+.contact-form-checkbox-label{
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+    margin-bottom: 30px;
+    margin-top: 20px;
+   
+    
+}
+
 .contact-form-checkbox-label::before{
     display: block;
     cursor: pointer;
     content: '';
     width: 16px;
     height: 15px;
-    background: var(--accent-color);
+    background: var(--white-background-color);
+    border: 0.2px solid  var(--secondary-text-color);
     border-radius: 2px;
+    margin-right: 10px;
 }
 .contact-form-checkbox:checked + .contact-form-checkbox-label::before{
-    background-color: var(--accent-color);
+    
     background-image: url('../images/icons/icon-check.svg');
+}
+
+.contact-form-checkbox:focus + .contact-form-checkbox-label::before{
+    background-color: var(--accent-color);
+}
+
+.dogovor{
+    color: var(--accent-color);
+}
+
+.contact-form-btn {
+    min-width: 200px;
+    min-height: 50px;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    display: inline-block;
+    padding: 10px 32px;
+    
+    font-family: inherit;
+    font-weight: 700;
+    background: var(--accent-color);
+    color: var(--white-text-color);
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+
+    align-self: center;
+
+    }
+
+.contact-form-btn:hover,
+.contact-form-btn:focus {
+    background: var(--btn-color-second);
 }
